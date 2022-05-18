@@ -13,9 +13,6 @@ app.get("/", (req, res) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 ////
-const kick = function () {
-  console.log(`Kick the Ball`);
-};
 // logger
 app.use(morgan("dev"));
 
@@ -26,4 +23,3 @@ const PORT = process.env.PORT || 3050;
 app.listen(PORT, console.log(`PORT running on localhost:${PORT}`));
 
 // console.log(mongoose.Types.ObjectId.isValid("627beab14f0bc43b242601cc"));
-kick();
