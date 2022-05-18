@@ -13,7 +13,6 @@ app.get("/", (req, res) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 ////
-console.log(dotenv);
 // logger
 app.use(morgan("dev"));
 
